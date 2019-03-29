@@ -6,7 +6,7 @@ test:
   links:
     - db
   environment:
-    DJANGO_SETTINGS_MODULE: todobackend.settings.test
+    DJANGO_SETTINGS_MODULE: dockerpoc.settings.test
     MYSQL_HOST: db
     MYSQL_USER: root
     MYSQL_PASSWORD: password
@@ -21,7 +21,7 @@ builder:
   command: ["pip", "wheel", "--no-index", "-f /build", "."]
 
 agent:
-  image: jmenga/ansible
+  image: bihani01/ansible
   links:
     - db
   environment:

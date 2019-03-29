@@ -1,4 +1,4 @@
-FROM jmenga/todobackend-base:latest
+FROM bihani01/dockerpoc-base:latest
 MAINTAINER Justin Menga <justin.menga@gmail.com>
 
 # Install dev/build dependencies
