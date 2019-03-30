@@ -5,13 +5,7 @@ test:
     - cache
   links:
     - db
-  environment:
-    DJANGO_SETTINGS_MODULE: dockerpoc.settings.test
-    MYSQL_HOST: db
-    MYSQL_USER: root
-    MYSQL_PASSWORD: password
-    TEST_OUTPUT_DIR: /reports
-
+  
 builder:
   build: ../../
   dockerfile: docker/dev/Dockerfile
